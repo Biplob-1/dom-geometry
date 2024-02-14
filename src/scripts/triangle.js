@@ -1,15 +1,17 @@
+function getInputValue(inputValue) {
+    const getInput = document.getElementById(inputValue);
+    const getInputText = getInput.value;
+    const result = parseFloat(getInputText)
+    return result;
+}
 function calculateTriangle() {
-    const triangleBaseInput = document.getElementById('triangle-base');
-    const traiangleBaseValue = triangleBaseInput.value;
-    const base = parseFloat(traiangleBaseValue)
-    // console.log(base);
-    const triangleHeightInput = document.getElementById('triangle-height');
-    const triangleHeightValue = triangleHeightInput.value;
-    const height = parseFloat(triangleHeightValue);
-    // console.log(hight)
+    const base = getInputValue('triangle-base');
+    const height = getInputValue('triangle-height');
+
     const result = 0.5 * base * height;
-    // console.log(result);
 
     const triangleArea = document.getElementById('triangle-area');
     triangleArea.innerText = result;
 }
+
+

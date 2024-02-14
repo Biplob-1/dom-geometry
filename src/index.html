@@ -13,96 +13,114 @@
     <main>
         <div class="flex flex-col md:flex-row gap-4">
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="card max-w-94 bg-base-100 shadow-xl">
-                    <figure><img src="images/triangle.png"></figure>
-                      <h2 class="card-title text-center my-4">Triangle</h2>
-                      <p class="text-center">Area = 0.5 X b X h</p>
-                      <div class="flex gap-4 align-middle my-4">
-                        <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="b">
-                        <span>cm</span>
-                        <input id="triangle-height" class="w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="h">
-                        <span>cm</span>
-                      </div>
-                      <div>
-                        <p class="text-2xl">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
-                      </div>
-                      <div class="card-actions">
-                        <button onclick="calculateTriangle()" class="w-full bg-sky-600 text-center text-white text-xl font-bold py-2">Calculate</button>
-                      </div>
+              <!-- triangle area -->
+              <div class="card max-w-94 bg-base-100 shadow-xl">
+                <figure class="h-60"><img src="images/triangle.png" class="p-2"></figure>
+                <h2 class="card-title justify-center items-center my-4">Triangle</h2>
+                <p class="text-center">Area = 0.5 X b X h</p>
+                <div class="flex gap-1 md:gap-2 lg:gap-4 justify-center text-center items-center my-4">
+                    <input id="triangle-base" class="max-w-24 md:max-w-12 lg:max-w-12 xl:max-w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="b">
+                    <span>cm</span>
+                    <input id="triangle-height" class="max-w-24 md:max-w-12 lg:max-w-12 xl:max-w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="h">
+                    <span>cm</span>
                 </div>
-                <div class="card max-w-94 bg-base-100 shadow-xl">
-                    <figure><img src="images/rectangle.png"></figure>
-                      <h2 class="card-title text-center my-4">Triangle</h2>
-                      <p class="text-center">Area = 0.5 X b X h</p>
-                      <div class="flex gap-4 align-middle my-4">
-                        <input class="w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="b">
-                        <span>cm</span>
-                        <input class="w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="h">
-                        <span>cm</span>
-                      </div>
-                      <div>
-                        <p class="text-2xl">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
-                      </div>
-                      <div class="card-actions">
-                        <button class="w-full bg-sky-600 text-center text-white text-xl font-bold py-2">Calculate</button>
-                      </div>
+                <div>
+                    <p class="text-2xl text-center">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
                 </div>
-                <div class="card max-w-94 bg-base-100 shadow-xl">
-                    <figure><img src="images/triangle.png"></figure>
-                      <h2 class="card-title text-center my-4">Triangle</h2>
-                      <p class="text-center">Area = 0.5 X b X h</p>
-                      <div class="flex gap-4 align-middle my-4">
-                        <input class="w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="b">
-                        <span>cm</span>
-                        <input class="w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="h">
-                        <span>cm</span>
-                      </div>
-                      <div class="card-actions">
-                        <button class="w-full bg-sky-600 text-center text-white text-xl font-bold py-2">Calculate</button>
-                      </div>
+                <div class="card-actions">
+                    <button onclick="calculateTriangle()" class="w-full bg-sky-600 text-center text-white text-xl font-bold py-2 rounded-md">Calculate</button>
                 </div>
-                <div class="card max-w-94 bg-base-100 shadow-xl">
-                    <figure><img src="images/triangle.png"></figure>
-                      <h2 class="card-title text-center my-4">Triangle</h2>
-                      <p class="text-center">Area = 0.5 X b X h</p>
-                      <div class="flex gap-4 align-middle my-4">
-                        <input class="w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="b">
-                        <span>cm</span>
-                        <input class="w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="h">
-                        <span>cm</span>
-                      </div>
-                      <div class="card-actions">
-                        <button class="w-full bg-sky-600 text-center text-white text-xl font-bold py-2">Calculate</button>
-                      </div>
+              </div>
+              <!-- rectangle area -->
+              <div class="card max-w-94 bg-base-100 shadow-xl">
+                <figure class="h-60"><img src="images/rectangle.png" class="p-2"></figure>
+                  <h2 class="card-title justify-center text-center my-4">Rectangle</h2>
+                  <p class="text-center">Area = 0.5 X b X h</p>
+                  <div class="flex gap-4 justify-center items-center my-4">
+                    <input class="max-w-24 md:max-w-12 lg:max-w-12 xl:max-w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="b">
+                    <span>cm</span>
+                    <input class="max-w-24 md:max-w-12 lg:max-w-12 xl:max-w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="h">
+                    <span>cm</span>
+                  </div>
+                    <div>
+                       <p class="text-2xl text-center">Area: <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
+                    </div>
+                    <div class="card-actions">
+                      <button class="w-full bg-sky-600 text-center text-white text-xl font-bold py-2 rounded-md">Calculate</button>
+                    </div>
+              </div>
+              <!-- Parallelogram area -->
+              <div class="card max-w-94 bg-base-100 shadow-xl">
+                <figure class="h-60"><img src="images/parallelogram.png" class="p-2"></figure>
+                  <h2 class="card-title justify-center text-center my-4">Parallelogram</h2>
+                  <p class="text-center">Area = b X h</p>
+                  <div class="flex gap-4 justify-center items-center my-4">
+                    <input class="max-w-24 md:max-w-12 lg:max-w-12 xl:max-w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="b">
+                    <span>cm</span>
+                    <input class="max-w-24 md:max-w-12 lg:max-w-12 xl:max-w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="h">
+                    <span>cm</span>
+                  </div>
+                  <div>
+                    <p class="text-2xl text-center">Area: <span id="parallelogram-area"></span> <span>cm<sup>2</sup></span></p>
+                  </div>
+                  <div class="card-actions">
+                    <button class="w-full bg-sky-600 text-center text-white text-xl font-bold py-2 rounded-md">Calculate</button>
+                  </div>
+              </div>
+              <!-- Rhombus area -->
+              <div class="card max-w-94 bg-base-100 shadow-xl">
+                <figure class="h-60"><img src="images/rhombus.png" class="p-2"></figure>
+                <h2 class="card-title justify-center text-center my-4">Rhombus</h2>
+                <p class="text-center">Area = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                <div class="flex gap-4 justify-center items-center my-4">
+                    <input id="triangle-base" class="max-w-24 md:max-w-12 lg:max-w-12 xl:max-w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="d1">
+                    <span>cm</span>
+                    <input id="triangle-height" class="max-w-24 md:max-w-12 lg:max-w-12 xl:max-w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="d2">
+                    <span>cm</span>
                 </div>
-                <div class="card max-w-94 bg-base-100 shadow-xl">
-                    <figure><img src="images/triangle.png"></figure>
-                      <h2 class="card-title text-center my-4">Triangle</h2>
-                      <p class="text-center">Area = 0.5 X b X h</p>
-                      <div class="flex gap-4 align-middle my-4">
-                        <input class="w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="b">
-                        <span>cm</span>
-                        <input class="w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="h">
-                        <span>cm</span>
-                      </div>
-                      <div class="card-actions">
-                        <button class="w-full bg-sky-600 text-center text-white text-xl font-bold py-2">Calculate</button>
-                      </div>
+                <div>
+                    <p class="text-2xl text-center">Area: <span id="rhombus-area"></span> <span>cm<sup>2</sup></span></p>
                 </div>
-                <div class="card max-w-94 bg-base-100 shadow-xl">
-                    <figure><img src="images/triangle.png"></figure>
-                      <h2 class="card-title text-center my-4">Triangle</h2>
-                      <p class="text-center">Area = 0.5 X b X h</p>
-                      <div class="flex gap-4 align-middle my-4">
-                        <input class="w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="b">
-                        <span>cm</span>
-                        <input class="w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="h">
-                        <span>cm</span>
-                      </div>
-                      <div class="card-actions">
-                        <button class="w-full bg-sky-600 text-center text-white text-xl font-bold py-2">Calculate</button>
-                      </div>
+                <div class="card-actions">
+                  <button onclick="" class="w-full bg-sky-600 text-center text-white text-xl font-bold py-2 rounded-md">Calculate</button>
                 </div>
+              </div>
+              <!-- Pentagon area -->
+              <div class="card max-w-94 bg-base-100 shadow-xl">
+                <figure class="h-60"><img src="images/pentagon.png" class="p-2"></figure>
+                  <h2 class="card-title justify-center text-center my-4" style="text-align: center;">Pentagon</h2>
+                  <p class="text-center">Area = 0.5 X p X b</p>
+                  <div class="flex gap-4 justify-center items-center my-4">
+                    <input class="max-w-24 md:max-w-12 lg:max-w-12 xl:max-w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="p">
+                    <span>cm</span>
+                    <input class="max-w-24 md:max-w-12 lg:max-w-12 xl:max-w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="b">
+                    <span>cm</span>
+                  </div>
+                    <div>
+                       <p class="text-2xl text-center">Area: <span id="pentagon-area"></span> <span>cm<sup>2</sup></span></p>
+                    </div>
+                    <div class="card-actions">
+                      <button class="w-full bg-sky-600 text-center text-white text-xl font-bold py-2 rounded-md">Calculate</button>
+                    </div>
+              </div>
+              <!-- Ellipse area -->
+              <div class="card max-w-94 bg-base-100 shadow-xl h-full">
+                <figure class="h-60"><img src="images/ellipse.png" class="p-2"></figure>
+                  <h2 class="card-title justify-center my-4">Ellipse</h2>
+                  <p class="text-center">Area = 0.5 X b X h</p>
+                  <div class="flex gap-4 justify-center items-center my-4">
+                    <input class="max-w-24 md:max-w-12 lg:max-w-12 xl:max-w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="a">
+                    <span>cm</span>
+                    <input class="max-w-24 md:max-w-12 lg:max-w-12 xl:max-w-24 text-2xl p-2 rounded-sm bg-gray-200" type="text" placeholder="b">
+                    <span>cm</span>
+                  </div>
+                  <div>
+                    <p class="text-2xl text-center">Area: <span id="ellipse-area"></span> <span>cm<sup>2</sup></span></p>
+                  </div>
+                  <div class="card-actions">
+                    <button class="w-full bg-sky-600 text-center text-white text-xl font-bold py-2 rounded-md">Calculate</button>
+                  </div>
+              </div>
             </div>
             <div class="max-w-94 border-2 border-gray-700 rounded-md">
                 <h3 class="text-3xl text-center p-4">Area Calculetor</h3>
