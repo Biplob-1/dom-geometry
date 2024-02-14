@@ -14,6 +14,12 @@ function getInputValue(inputValue) {
     }
     return result;
 }
+// set inner text
+function setInnerTextById(elementId, area) {
+    const element = document.getElementById(elementId);
+    element.innerText = area.toFixed(2);
+
+}
 // Triangle
 function calculateTriangle() {
     const base = getInputValue('triangle-base');
@@ -21,8 +27,9 @@ function calculateTriangle() {
 
     const result = 0.5 * base * height;
 
-    const triangleArea = document.getElementById('triangle-area');
-    triangleArea.innerText = result;
+    setInnerTextById('triangle-area', result)
+    // const triangleArea = document.getElementById('triangle-area');
+    // triangleArea.innerText = result;
 }
 // Rectangle
 function calculateRectangle() {
@@ -31,8 +38,9 @@ function calculateRectangle() {
 
     const result = width * length;
 
-    const rectangleArea = document.getElementById('rectangle-area');
-    rectangleArea.innerText = result;
+    // const rectangleArea = document.getElementById('rectangle-area');
+    // rectangleArea.innerText = result;
+    setInnerTextById('rectangle-area', result);
 }
 //Parallelogram
 function calculateParallelogram() {
@@ -41,8 +49,9 @@ function calculateParallelogram() {
 
     const result = base * height;
 
-    const parallelogramArea = document.getElementById('parallelogram-area');
-    parallelogramArea.innerText = result;
+    // const parallelogramArea = document.getElementById('parallelogram-area');
+    // parallelogramArea.innerText = result;
+    setInnerTextById('parallelogram-area', result);
 }
 // Rhombus
 function calculateRhombus() {
@@ -51,8 +60,9 @@ function calculateRhombus() {
 
     const result = 0.5 * diagonalFirst * diagonalSecond;
 
-    const triangleArea = document.getElementById('rhombus-area');
-    triangleArea.innerText = result;
+    // const triangleArea = document.getElementById('rhombus-area');
+    // triangleArea.innerText = result;
+    setInnerTextById('rhombus-area', result);
 }
 // Pentagon
 function calculatePentagon() {
@@ -61,16 +71,18 @@ function calculatePentagon() {
 
     const result = 0.5 * pentagonBase * pentagonHeight;
 
-    const pentagonArea = document.getElementById('pentagon-area');
-    pentagonArea.innerText = result;
+    // const pentagonArea = document.getElementById('pentagon-area');
+    // pentagonArea.innerText = result;
+    setInnerTextById('pentagon-area', result);
 }
 // Ellipse
 function calculateEllipse() {
     const ellipseBase = getInputValue('ellipse-base');
     const ellipseHeight = getInputValue('ellipse-height');
 
-    const result = 3.14 * ellipseBase * ellipseHeight;
+    const result = Math.PI * ellipseBase * ellipseHeight;
 
-    const ellipseArea = document.getElementById('ellipse-area');
-    ellipseArea.innerText = result;
+    // const ellipseArea = document.getElementById('ellipse-area');
+    // ellipseArea.innerText = result;
+    setInnerTextById('ellipse-area', result);
 }
